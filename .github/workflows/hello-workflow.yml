@@ -4,12 +4,12 @@ on:
   push:
     branches: [main]
 
-    jobs:
+jobs
   say-hello:
     runs-on: ubuntu-latest
-    steps:
-      - name: Print a greeting
-        run: echo "Hello from GitHub Actions!"
+      steps:
+        - name: Print a greeting
+          run: echo "Hello from GitHub Actions!"
 
         - name: Show who triggered the workflow
         run: echo "Triggered by ${{ github.actor }}"
@@ -20,4 +20,4 @@ on:
           echo "Kernel version: $(uname -r)"
           echo "Machine name: $(hostname)"
           echo "Current directory: $(pwd)"
-          echo "Date and time: $(date)"
+          echo "Date and time: $(date)"         
