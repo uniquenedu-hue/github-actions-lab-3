@@ -7,11 +7,11 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-      steps:
-        - name: Print a greeting
-          run: echo "Hello from GitHub Actions!"
+    steps:
+      - name: Print a greeting
+        run: echo "Hello from GitHub Actions!"
 
-        - name: Show who triggered the workflow
+      - name: Show who triggered the workflow
         run: echo "Triggered by ${{ github.actor }}"
  
       - name: Show system information
